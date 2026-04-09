@@ -13,7 +13,7 @@ def warp_conformal(image_path, output_path):
 
     s = 2
     cT = 1 - (np.log(s)**2)/(4*np.pi**2)+(np.log(s)/(2*np.pi))*1j
-    z0 = 0 + 0*1j
+    z0 = 0 + 0j
     A = np.exp(z0*(1-cT))
 
     with np.errstate(divide='ignore', invalid='ignore'):
